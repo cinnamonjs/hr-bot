@@ -1,0 +1,26 @@
+{
+	"name": "hrbot",
+	"module": "index.ts",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"start": "bun src/index.ts",
+		"build": "bun build --target=bun src/index.ts",
+		"deploy": "bun src/deploy-commands.ts",
+		"dev": "bun --watch src/index.ts"
+	},
+	"dependencies": {
+		"@zoomus/websdk": "^2.18.3",
+		"axios": "^1.9.0",
+		"discord.js": "^14.19.3",
+		"dotenv": "^16.5.0",
+		"googleapis": "^129.0.0",
+		"jsonwebtoken": "^9.0.2"
+	},
+	"devDependencies": {
+		"@types/jsonwebtoken": "^9.0.9",
+		"@types/node": "^20.17.47",
+		"bun-types": "latest",
+		"typescript": "^5.8.3"
+	}
+}
